@@ -1,3 +1,27 @@
 spring:
   application:
-    name: demo
+    name: Mediconnect-plus
+  datasource:
+    url: jdbc:mysql://localhost:3306/mediconnect_plus?createDatabaseIfNotExist=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+  security:
+    user:
+      name: user
+      password: 1234
+
+server:
+  port: 8080
+
+
+  main:
+    allow-bean-definition-overriding: true
+
+GOOGLE_APPLICATION_CREDENTIALS: src/main/resources/dialogflow-key.json
+
