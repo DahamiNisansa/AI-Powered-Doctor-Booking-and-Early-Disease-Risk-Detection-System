@@ -9,7 +9,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
 
   security:
     user:
@@ -17,7 +17,7 @@ spring:
       password: 1234
 
 server:
-  port: 8080
+  port: 8081
 
 
   main:

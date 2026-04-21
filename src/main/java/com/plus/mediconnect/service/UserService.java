@@ -41,8 +41,6 @@ public interface UserService extends UserDetailsService {
 
     String deleteUserId(String id);
 
-
-
     UserDto getUserById(String userId);
 
     List<UserDto> getAllOderByUsers();
